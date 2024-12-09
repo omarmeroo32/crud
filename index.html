@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>مشروع ادارة منتجات كامل بالجافاسكريبت</title>
+    <link rel="stylesheet" href="graphic.css">
+</head>
+<body>
+    
+<div class="cruds">
+      <div class="haed">
+        <h3>Crud</h3>
+        <p>project managementsystem</p>
+      </div>
+      <div class="inputs">
+         <input type="text"  id="title" placeholder="title">
+
+         <div class="price">
+            <input onkeyup="getTotal()" type="number" placeholder="price"  id="price">
+            <input onkeyup="getTotal()" type="number" placeholder="taxes"  id="taxes">
+            <input onkeyup="getTotal()" type="number" placeholder="ads"  id="ads">
+            <input onkeyup="getTotal()" type="number" placeholder="discound"  id="discound">
+            <small id="total"></small>
+         </div>
+         <input type="number" placeholder="count" id="count">
+         <input type="text" placeholder="category" id="category">
+               <button id="submit">Careate</button>
+      </div>
+
+
+
+
+
+      <div class="outputs">
+      <div class="searchBlock">
+        <input onkeyup="getSearchData(this.value)" type="text"  id="search" placeholder="search">
+        <div class="btsSearch">
+            <button onclick="getsearchMood(this.id)" id="searchTitle"> Search By Title</button>
+            <button onclick="getsearchMood(this.id)" id="searchCategory"> Search By Category</button>
+        </div>
+      
+      </div>
+     <div id="deletbtn">
+        
+     </div>
+      <table>
+        <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>price</th>
+            <th>taxes</th>
+            <th>ads</th>
+            <th>discount</th>
+            <th>total</th>
+            <th>category</th>
+            <th>update</th>
+            <th>delet</th>
+        </tr>
+        <tbody id= 'tobody'>
+            
+          
+        
+        </tbody>
+      </table>
+
+      </div>
+
+
+</div>  
+
+
+
+    <script src="java.js"></script>
+</body>
+
+
+</html>
